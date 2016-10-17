@@ -52,8 +52,7 @@
 
       
         <div class="span12 why" id="whyli"> 
-
-          <h1>WHY.<a name="why" id="why"></a></h1><br><br>
+          <a name="why" id="why"></a><h1>WHY.</h1>
 
 
             <ul class="li1">
@@ -96,11 +95,30 @@
       <div class="row separator"></div>
 
 
-      <div class="row whocontainer">
-        <div class="span12 who">
-          <h1>FOR WHO.<a name="who" id="who"></a></h1><br><br>
+      <div class="row whocontainer" id="whocont">
+        <div class="span12 who" id="wholi">
+          <a name="who" id="who"></a><h1>FOR WHO.</h1><br><br>
+          <ul class="li2">
+              <li>
+                <h2>For everyone</h2>
+                <p>For your CPU, AIO (all in one) watercooling kits are available for everyone that knows how to build a pc, allowing watercooling at a reasonnable price.</p>
+              </li>
+
+              <li>
+                <h2>For amateurs</h2>
+                <p>If AIO kits do not satisfy you (and your wallet is full), you can always try to setup a custom loop, and thus truely make your PC unique.</p>
+              </li>
+          </ul>
 
 
+
+        </div>
+
+        <div class="row whoimg" id="whoimg">
+          <div class="span6 whoimg" id="whoimg1"><br><br></div>
+          <div class="span6 whoimg" id="whoimg2"><br><br></div>
+          <div class="darkwho"></div>
+          <div class="whovr"></div>
 
         </div>
 
@@ -145,11 +163,22 @@
         var imgheight = contheight - height;
         $("#whyimgcontainer").height(imgheight - 20);
 
+        var contheight = $("#whocont").height();
+        var height = $("#wholi").height();
+        var imgheight = contheight - height;
+        $("#whoimg").height(imgheight - 20);
+
       $(window).resize(function(){
         var contheight = $("#whycontainer").height();
         var height = $("#whyli").height();
         var imgheight = contheight - height;
         $("#whyimgcontainer").height(imgheight - 20);
+
+        var contheight = $("#whocont").height();
+        var height = $("#wholi").height();
+        var imgheight = contheight - height;
+        $("#whoimg").height(imgheight - 20);
+
       });
       
 

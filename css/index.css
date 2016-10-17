@@ -140,9 +140,10 @@ body {
 }
 
 .why h1 {
+	text-align: center;
 	margin: 0;
 	margin-left: 10px;
-	margin-top: 5px;
+	padding-top: 0.8em;
 	color: #00D054;
 	font-family: Bebas;
 	font-size: 5em;
@@ -187,7 +188,7 @@ body {
 .row.imgcontainer {
 	margin: 0;
 	margin-left: 10vw;
-	border: 2px solid #00D054;
+	border: 3px solid #00D054;
 	background: url(../pictures/3.jpg) no-repeat center;
 	background-size: 100% auto;
 	overflow: hidden;
@@ -216,7 +217,6 @@ body {
 }
 
 .whytxtcont h2{
-
 	text-align: center;
 	width: 100%;
 	font-size: 3em;
@@ -237,19 +237,88 @@ body {
 	position: relative;
 	height: 100vh;
 	background-color: #10131A; 
-	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .who {
 	position: relative;
-	width: 100vw;
+	width: 70vw;
 }
 
 .who h1 {
+	text-align: center;
 	margin: 0;
 	margin-left: 10px;
-	margin-top: 5px;
+	padding-top: 0.8em;
 	color: #00D054;
 	font-family: Bebas;
 	font-size: 5em;
+}
+
+
+.who li {
+	list-style-type: square;
+	color: #00D054;
+	font-size: 2em;
+}
+
+.who li h2 {
+	color: white;
+	font-family: Bebas;
+	font-size: 1.3em;
+	margin: 0;
+}
+
+.who li p {
+	color: white;
+	margin-top: 10px;
+	font-family: monospace;
+	font-size: 0.6em;
+}
+
+.whoimg {
+	position: relative;
+	margin: 0;
+	border: 3px solid #00D054;
+	display: flex;
+	flex-direction: row;
+	width: 70vw;
+	overflow: hidden;
+	height: 200px;
+}
+
+#whoimg1 {
+	height: 100%;
+	background: url(../pictures/1.jpg) no-repeat center;
+	background-size: auto 100%;
+	overflow: hidden;
+	border: none;
+}
+
+#whoimg2 {
+	height: 100%;
+	background: url(../pictures/2.jpg) no-repeat center;
+	background-size: auto 100%;
+	overflow: hidden;
+	border: none;
+}
+
+.darkwho {
+	position: absolute;
+	top 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+}
+.whovr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	border-right: 3px solid #00D054;
+
 }
