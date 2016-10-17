@@ -1,0 +1,22 @@
+<ul class="li1">
+              <li>
+                <h2>Temperature</h2>
+                <p>Of course, the main interest in watercooling your PC build is to keep it cooler, increasing its life span and its performance. For example, watercooling your CPU can lower its temperature by 20°C, allowing for a better overclock.</p>
+              </li>
+
+              <li>
+                <h2>Silence</h2>
+                <p>Since there are generally less fans on a watercooled system than an aircooled system, the system will be quieter. But the fan's work also changes, watercooling usually makes fans spin slower, thus they make make noises.</p>
+              </li>
+
+              <li>
+                <h2>No dust</h2>
+                <p>As the airflow in the case is dramatically reduced, dust is less likely to build up in your system, allowing a cleaner build for a longer time.</p>
+              </li>
+
+            <li>
+              <h2>Little maintenance</h2>
+              <p>Once your watercooling is setup, there is almost no need for maintenance. Indeed, the less present dust allow you to let your build run for a long time before it needs to be cleaned. Also, since the water loop is closed, it will deteriorate very slowly, you will only need to change the liquid once a year.</p>
+            </li>
+
+          </ul>
