@@ -1,7 +1,11 @@
 
-::-webkit-scrollbar {
+::-webkit-scrollbar { /* chrome scrollbar */
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+body {
+	overflow-x: hidden;
 }
 
 @font-face {
@@ -138,6 +142,7 @@
 .why h1 {
 	margin: 0;
 	margin-left: 10px;
+	margin-top: 5px;
 	color: #00D054;
 	font-family: Bebas;
 	font-size: 5em;
@@ -225,4 +230,26 @@
 	font-size: 1.1em;
 	color: white;
 	font-family: monospace;
+}
+
+
+.whocontainer {
+	position: relative;
+	height: 100vh;
+	background-color: #10131A; 
+	
+}
+
+.who {
+	position: relative;
+	width: 100vw;
+}
+
+.who h1 {
+	margin: 0;
+	margin-left: 10px;
+	margin-top: 5px;
+	color: #00D054;
+	font-family: Bebas;
+	font-size: 5em;
 }
