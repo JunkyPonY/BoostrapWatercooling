@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Watercooling</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    
+    <link href="css/font-awesome.min.css" rel="stylesheet"> <!-- FONTAWESOME -->
+
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid ">
+
+      <div class="row headercontainer">
+        <div class="span12 header">
+
+          <div class="row-fluid headertitle">
+            <h1>CHOOSE WATERCOOLING</h1>
+            <hr width="200px">
+          </div>
+
+          <div class="row-fluid nav" id="scroller-anchor">
+            <div class="span6 navbar" id="scroller">
+              <ul>
+                <li><a href="#why">WHY</a></li> <h1>&nbsp &middot &nbsp</h1>
+                <li><a href="#who">FOR WHO</a></li>  <h1>&nbsp &middot &nbsp</h1>
+                <li><a href="#buy">BUY</a></li>  <h1>&nbsp &middot &nbsp</h1>
+                <li><a href="#infos">INFOS</a></li>  <h1>&nbsp &middot &nbsp</h1>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+
+          
+
+        </div>
+      </div>
+
+      <div class="row separator"></div>
+
+      <div class="row whycontainer" id="whycontainer"><a name="why" id="why"></a>
+      
+        <div class="span12 why" id="whyli">
+          <h1>WHY.</h1><br><br>
+
+
+            <ul class="li1">
+              <li>
+                <h2>Temperature</h2>
+                <p>Of course, the main interest in watercooling your PC build is to keep it cooler, increasing its life span and its performance. For example, watercooling your CPU can lower its temperature by 20°C, allowing for a better overclock.</p>
+              </li>
+
+              <li>
+                <h2>Silence</h2>
+                <p>Since there are generally less fans on a watercooled system than an aircooled system, the system will be quieter. But the fan's work also changes, watercooling usually makes fans spin slower, thus they make make noises.</p>
+              </li>
+
+              <li>
+                <h2>No dust</h2>
+                <p>As the airflow in the case is dramatically reduced, dust is less likely to build up in your system, allowing a cleaner build for a longer time.</p>
+              </li>
+
+            <li>
+              <h2>Little maintenance</h2>
+              <p>Once your watercooling is setup, there is almost no need for maintenance. Indeed, the less present dust allow you to let your build run for a long time before it needs to be cleaned. Also, since the water loop is closed, it will deteriorate very slowly, you will only need to change the liquid once a year.</p>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="row imgcontainer" id="whyimgcontainer">
+            <div class="span12 whyimg">
+              <div class="whytxtcont">
+                <h2>Gorgeous look</h2>
+                <p>A custom watercooling sets almost no boundaries for your PC's look. Pipes can be bent to fit your needs, allowing very complex builds. Also, you can get pretty much every color you'd like for anything.</p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+
+    <script type="text/javascript"> 
+            $(document).ready(moveScroller);
+
+            $(document).ready(function() {
+              $('body').on('click', '.navbar li a', function(e) {
+                $('li.active').removeClass('active');
+                var link = $(this);
+                link.closest('li').addClass('active');
+                // Scroll animation
+                $('html, body').animate( { scrollTop: $(link.attr('href')).offset().top }, 750 );
+                return false;
+             });
+
+                //Scrollspy
+                $('body').scrollspy({ target: '#menu' });
+            });
+    </script> 
+
+    <script type="text/javascript">
+        var contheight = $("#whycontainer").height();
+        var height = $("#whyli").height();
+        var imgheight = contheight - height;
+        $("#whyimgcontainer").height(imgheight - 20);
+
+      $(window).resize(function(){
+        var contheight = $("#whycontainer").height();
+        var height = $("#whyli").height();
+        var imgheight = contheight - height;
+        $("#whyimgcontainer").height(imgheight - 20);
+      });
+      
+
+
+
+    </script>
+
+  </body>
+</html>
