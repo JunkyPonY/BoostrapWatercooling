@@ -364,25 +364,10 @@ body {
 	margin-bottom: 10vh;
 }
 
-.form p {
+label, legend {
+	color: #00D054;
+}
+
+.form-check-label {
 	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-
-input[type=text], input[type=email] {
-	font-size: 2em;
-	width: 30%;
-	color: black;
-	border: 2px solid #00D054;
-}
-
-input[type=submit] {
-	color: black;
-	background-color: #00D054;
-	border: none;
-	height: 2em;
-	width: 3em;
 }
