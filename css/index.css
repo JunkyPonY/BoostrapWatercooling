@@ -1,3 +1,5 @@
+/* ##################### GLOBAL ##################### */
+
 
 ::-webkit-scrollbar { /* chrome scrollbar */
     width: 0px;  /* remove scrollbar space */
@@ -27,6 +29,69 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+.cattitle {
+	text-align: center;
+	margin: 0;
+	height: auto;
+	padding-top: 1em;
+	color: #00D054;
+	font-family: Bebas;
+	font-size: 5em;
+}
+
+.cat {
+	position: relative;
+	width: 70vw;
+}
+
+
+
+.cat li {
+	margin: 0;
+	padding: 0;
+	list-style-type: square;
+	color: #00D054;
+	font-size: 2em;
+}
+
+.cat li p {
+	color: white;
+	margin-top: 10px;
+	font-family: monospace;
+	font-size: 0.6em;
+}
+
+
+.cat ul {
+	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+.catcontainer {
+	width: 100vw;
+	position: relative;
+	height: 100vh;
+	background-color: #10131A; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+
+
+
+
+
+
+
+
+
+/* ##################### HOME & NAVBAR ##################### */
 
 .headercontainer {
 	position: relative;
@@ -132,6 +197,11 @@ body {
 }
 
 
+
+
+
+/* ##################### WHY ##################### */
+
 .whytxtcont p{
 	text-align: center;
 	width: 60%;
@@ -140,28 +210,88 @@ body {
 	font-family: monospace;
 }
 
-.cat {
+#whyli {
 	position: relative;
-	width: 70vw;
+	height: 100%;
 }
 
-.cattitle {
+#slide1 {
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	width: 100%;
+}
+
+#slide1 li, #slide2 li {
+	list-style-type: none;
+}
+
+#slide2 {
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+
+#slide3 {
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+}
+
+
+#slidenext {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	bottom: 30px;
+	right: 0;
+	width: 50px;
+	height: 50px;
+
 	text-align: center;
-	margin: 0;
-	height: auto;
-	padding-top: 1em;
-	color: #00D054;
-	font-family: Bebas;
-	font-size: 5em;
+	font-size: 2em;
+
+	color: white;
+	border: 3px solid #00D054;
+	border-radius: 50px;
+	background: #00D054;
 }
 
+#slideprev {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	bottom: 30px;
+	left: 0;
+	width: 50px;
+	height: 50px;
 
-.cat li {
-	margin: 0;
-	padding: 0;
-	list-style-type: square;
-	color: #00D054;
+	text-align: center;
 	font-size: 2em;
+
+	color: white;
+	border: 3px solid #00D054;
+	border-radius: 50px;
+	background: #10131a;
+}
+
+.glyphicon-chevron-right {
+	margin 0;
+	padding 0;
+	margin-top: -4px;
+	margin-left: 1px; 
+}
+
+.glyphicon-chevron-left {
+	margin 0;
+	padding 0;
+	margin-top: -4px;
+	margin-left: 1px; 
 }
 
 .why li h2 {
@@ -171,12 +301,7 @@ body {
 	margin: 0;
 }
 
-.cat li p {
-	color: white;
-	margin-top: 10px;
-	font-family: monospace;
-	font-size: 0.6em;
-}
+
 
 .li1 {
 	display: flex;
@@ -189,11 +314,6 @@ body {
 	width: 100%;
 	margin-bottom: 0;
 }
-.cat ul {
-	margin-bottom: 0;
-	margin: 0;
-	padding: 0;
-}
 
 .row.imgcontainer {
 	margin: 0;
@@ -202,6 +322,7 @@ body {
 	background-size: 100% auto;
 	overflow: hidden;
 	width: 70vw;
+	height: 50vh;
 	position: relative;
 }
 
@@ -236,16 +357,15 @@ body {
 
 
 
-.catcontainer {
-	width: 100vw;
-	position: relative;
-	height: 100vh;
-	background-color: #10131A; 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
-}
+
+
+
+
+
+
+
+
+/* ##################### WHO ##################### */
 
 .who {
 	position: relative;
@@ -320,6 +440,13 @@ body {
 
 }
 
+
+
+
+
+
+/* ##################### BUY ##################### */
+
 .buy {
 	height: 100vh;
 }
@@ -365,6 +492,9 @@ body {
 
 
 
+
+
+/* ##################### CONTACT ##################### */
 
 #contact {
 	margin-bottom: 10vh;
