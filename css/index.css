@@ -99,7 +99,6 @@ body {
 }
 
 .nav li {
-
 	height: 100%;
 	display: inline;
 	color: white;
@@ -118,8 +117,14 @@ body {
 	text-decoration: none;
 }
 
-
+.anchor {
+	margin 0;
+	padding: 0;
+}
 .separator {
+	margin-left: -10%;
+	padding: 0;
+	width: 120vw;
 	height: 100px;
 	background-color: #25282E;
 	border-top: 10px solid #00D054;
@@ -127,30 +132,33 @@ body {
 }
 
 
-.whycontainer {
-	position: relative;
-	height: 100vh;
-	background-color: #10131A; 
-	
+.whytxtcont p{
+	text-align: center;
+	width: 60%;
+	font-size: 1.1em;
+	color: white;
+	font-family: monospace;
 }
 
-.why {
+.cat {
 	position: relative;
-	width: 100vw;
+	width: 70vw;
 }
 
-.why h1 {
+.cattitle {
 	text-align: center;
 	margin: 0;
-	margin-left: 10px;
-	padding-top: 0.8em;
+	height: auto;
+	padding-top: 1em;
 	color: #00D054;
 	font-family: Bebas;
 	font-size: 5em;
 }
 
 
-.why li {
+.cat li {
+	margin: 0;
+	padding: 0;
 	list-style-type: square;
 	color: #00D054;
 	font-size: 2em;
@@ -163,7 +171,7 @@ body {
 	margin: 0;
 }
 
-.why li p {
+.cat li p {
 	color: white;
 	margin-top: 10px;
 	font-family: monospace;
@@ -178,21 +186,22 @@ body {
 }
 
 .li1 li {
-	width: 45vw;
+	width: 100%;
 	margin-bottom: 0;
 }
-.why ul {
+.cat ul {
 	margin-bottom: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .row.imgcontainer {
 	margin: 0;
-	margin-left: 10vw;
 	border: 3px solid #00D054;
 	background: url(../pictures/3.jpg) no-repeat center;
 	background-size: 100% auto;
 	overflow: hidden;
-	width: 80vw;
+	width: 70vw;
 	position: relative;
 }
 
@@ -224,22 +233,18 @@ body {
 	font-family: bebas;
 }
 
-.whytxtcont p{
-	text-align: center;
-	width: 60%;
-	font-size: 1.1em;
-	color: white;
-	font-family: monospace;
-}
 
 
-.whocontainer {
+
+.catcontainer {
+	width: 100vw;
 	position: relative;
 	height: 100vh;
 	background-color: #10131A; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
 }
 
 .who {
@@ -247,31 +252,23 @@ body {
 	width: 70vw;
 }
 
-.who h1 {
-	text-align: center;
-	margin: 0;
-	margin-left: 10px;
-	padding-top: 0.8em;
-	color: #00D054;
-	font-family: Bebas;
-	font-size: 5em;
-}
 
 
-.who li {
+
+.cat li {
 	list-style-type: square;
 	color: #00D054;
 	font-size: 2em;
 }
 
-.who li h2 {
+.cat li h2 {
 	color: white;
 	font-family: Bebas;
 	font-size: 1.3em;
 	margin: 0;
 }
 
-.who li p {
+.cat li p {
 	color: white;
 	margin-top: 10px;
 	font-family: monospace;
@@ -321,4 +318,43 @@ body {
 	height: 100%;
 	border-right: 3px solid #00D054;
 
+}
+
+.buy {
+	height: 100vh;
+}
+
+.buycat {
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	width: 100%;
+	
+}
+
+.buycat h2 {
+	text-align: center;
+	color: white;
+	border-bottom: 2px solid #00D054;
+	font-family: bebas;
+	font-size: 2.5em;
+}
+
+.buy {
+	height: 100%;
+}
+.buycat ul{
+	text-align: center;
+	margin-top: 30vh;
+	width: 100%;
+
+}
+
+.buycat li{
+	list-style-type: none;
+}
+.buycat a {
+	color: white;
+	font-family: overpass;
 }

@@ -35,7 +35,6 @@
                 <li><a href="#why">WHY</a></li> <h1>&nbsp &middot &nbsp</h1>
                 <li><a href="#who">FOR WHO</a></li>  <h1>&nbsp &middot &nbsp</h1>
                 <li><a href="#buy">BUY</a></li>  <h1>&nbsp &middot &nbsp</h1>
-                <li><a href="#infos">INFOS</a></li>  <h1>&nbsp &middot &nbsp</h1>
                 <li><a href="#contact">CONTACT</a></li>
               </ul>
             </div>
@@ -48,11 +47,11 @@
 
       <div class="row separator"></div>
 
-      <div class="row whycontainer" id="whycontainer">
+      <div class="row catcontainer" id="whycontainer">
 
       
-        <div class="span12 why" id="whyli"> 
-          <a name="why" id="why"></a><h1>WHY.</h1>
+        <div class="span12 cat" id="whyli"> 
+          <h1 id="why" class="cattitle">WHY</h1>
 
 
             <ul class="li1">
@@ -95,9 +94,9 @@
       <div class="row separator"></div>
 
 
-      <div class="row whocontainer" id="whocont">
-        <div class="span12 who" id="wholi">
-          <a name="who" id="who"></a><h1>FOR WHO.</h1><br><br>
+      <div class="row catcontainer" id="whocont">
+        <div class="span12 cat" id="wholi">
+          <h1 id="who" class="cattitle">FOR WHO</h1><br><br>
           <ul class="li2">
               <li>
                 <h2>For everyone</h2>
@@ -109,6 +108,7 @@
                 <p>If AIO kits do not satisfy you (and your wallet is full), you can always try to setup a custom loop, and thus truely make your PC unique.</p>
               </li>
           </ul>
+          <br><br><br><br><br><br>
 
 
 
@@ -125,6 +125,56 @@
       </div>
 
 
+      <div class="separator"></div>
+
+
+      <div class="row catcontainer">
+        <div class="span12 cat buy" id="buycont">
+          <div id="buy"><h1 class="cattitle" >BUY</h1></div>
+          <div class="row buycat" id="buyli">
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+      
+              <ul>
+                <h2>All In One</h2>
+                <li><a href="https://www.ekwb.com/shop/aio-configurator/predator">EKWB</a></li>
+                <li><a href="http://www.corsair.com/en/cooling">Corsair H series</a></li>
+                <li><a href="http://www.materiel.net/kit-de-watercooling-complet/">Materiel.net</a></li>
+                <li><a href="http://www.ldlc.com/informatique/pieces-informatique/watercooling/c4715/">LDLC</a></li>
+                <li><a href="https://www.topachat.com/pages/produits_cat_est_micro_puis_rubrique_est_w_reliq.html">TopAchat</a></li>
+
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
+              
+              <ul>
+                <div class="buytop"><h2>Custom Kits Part</h2></div>
+                <li><a href="https://www.ekwb.com/shop/">EKWB</a></li>
+                <li><a href="http://www.aquatuning.fr/">AquaTuning</a></li>
+                <li><a href="http://www.xs-pc.com/">XSPC</a></li>
+                <li><a href="http://koolance.com/">Koolance</a></li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="separator"></div>
+
+      <div class="row catcontainer">
+        <div class="span12 cat">
+          <div id="contact"><h1 class="cattitle" >CONTACT</h1></div>
+          
+        </div>
+      </div>
+
+
+
 
     </div>
 
@@ -134,7 +184,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="css/jquery.min.css"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js" type="text/javascript"></script>
@@ -168,6 +218,11 @@
         var imgheight = contheight - height;
         $("#whoimg").height(imgheight - 20);
 
+        var contheight = $("#buycont").height();
+        var height = $("#buy").height();
+        var imgheight = contheight - height;
+        $("#buyli").height(imgheight - 20);
+
       $(window).resize(function(){
         var contheight = $("#whycontainer").height();
         var height = $("#whyli").height();
@@ -178,6 +233,11 @@
         var height = $("#wholi").height();
         var imgheight = contheight - height;
         $("#whoimg").height(imgheight - 20);
+
+        var contheight = $("#buycont").height();
+        var height = $("#buy").height();
+        var imgheight = contheight - height;
+        $("#buyli").height(imgheight - 20);
 
       });
       
