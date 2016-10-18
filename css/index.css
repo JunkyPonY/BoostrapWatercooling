@@ -333,31 +333,37 @@ body {
 	
 }
 
-.buycat h2 {
-	text-align: center;
-	color: white;
-	border-bottom: 2px solid #00D054;
-	font-family: bebas;
-	font-size: 2.5em;
-}
-
 .buy {
 	height: 100%;
 }
-.buycat ul{
-	text-align: center;
-	margin-top: 30vh;
-	width: 100%;
 
+.buycat {
+	margin-top: 20vh;
+}
+.panel-primary {
+	border: 1px solid #00D054 !important;
 }
 
-.buycat li{
-	list-style-type: none;
+.panel-heading {
+	font-family: bebas;
+	font-size: 2.5em;
+	background-color: #00D054 !important;
 }
+
+.panel-body {
+	font-family: overpass;
+	font-size: 1.2em;
+	background-color: #10131a;
+}
+
 .buycat a {
 	color: white;
 	font-family: overpass;
+	display: block;
 }
+
+
+
 
 
 #contact {
@@ -368,6 +374,24 @@ label, legend {
 	color: #00D054;
 }
 
-.form-check-label {
+.radio-inline {
 	color: white;
+}
+
+#submit {
+	background-color: #10131a;
+	color: white;
+	border: 2px solid #00D054;
+}
+
+#submit:hover {
+	background-color: rgba(0,208,84,0.5);
+}
+
+input[type=radio] {
+	background-color: #10131a;
+}
+
+form {
+	width: 100%;
 }
