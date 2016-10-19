@@ -1,3 +1,18 @@
+function autoScroll() {
+    $('body').on('click', '.navbar li a', function(e) {
+        $('li.active').removeClass('active');
+        var link = $(this);
+        link.closest('li').addClass('active');
+        // Scroll animation
+        $('html, body').animate( { scrollTop: $(link.attr('href')).offset().top }, 750 );
+        return false;
+    });
+
+    $('body').scrollspy({ target: '#menu' });
+}
+
+
+
 function moveScroller() {
     var $anchor = $("#scroller-anchor");
     var $scroller = $('#scroller');
@@ -68,6 +83,22 @@ function slide() {
             }
             $("#slidenext").css("background-color", "#00D054");
         }
+
+    });
+}
+
+function setheight() {
+    var contheight = $("#whocont").height();
+    var height = $("#wholi").height();
+    var imgheight = contheight - height;
+    $("#whoimg").height(imgheight - 20);
+
+    $(window).resize(function(){
+
+        var contheight = $("#whocont").height();
+        var height = $("#wholi").height();
+        var imgheight = contheight - height;
+        $("#whoimg").height(imgheight - 20);
 
     });
 }
