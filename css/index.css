@@ -467,24 +467,19 @@ body {
 	flex-direction: row;
 	margin: 0;
 	width: 100%;
+	margin-top: 20vh;
 	
 }
 
-.buy {
-	height: 100%;
-}
-
-.buycat {
-	margin-top: 20vh;
-}
 .panel-primary {
 	border: 1px solid #00D054 !important;
 }
 
-.panel-heading {
+.panel-heading, .info h2 {
 	font-family: bebas;
 	font-size: 2.5em;
 	background-color: #00D054 !important;
+	color: white;
 }
 
 .panel-body {
@@ -493,7 +488,7 @@ body {
 	background-color: #10131a;
 }
 
-.buycat a {
+.buycat a, .info a {
 	color: white;
 	font-family: overpass;
 	display: block;
@@ -501,7 +496,11 @@ body {
 
 
 
-
+.info {
+	margin-top: 15%;
+	width: 100%;
+	margin-left: auto;
+}
 
 
 /* ##################### CONTACT ##################### */
