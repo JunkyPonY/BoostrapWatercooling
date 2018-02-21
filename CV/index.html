@@ -5,19 +5,19 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		<link href="https://fonts.googleapis.com/css?family=Dosis:400,600" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Dosis:400,600" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row" id="mainContent">
 				<div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-					<!-- Indicators 
+					<!-- Indicators
 					<ol class="carousel-indicators">
-					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 					</ol>
 					-->
 					<!-- Wrapper for slides -->
@@ -39,7 +39,6 @@
 										<td>
 											<ul>
 												<li>Baccalauréat Scientifique option SI, spécialité ISN au lycée Lafayette de Clermont-Ferrand.</li>
-
 											</ul>
 										</td>
 									</tr>
@@ -55,12 +54,60 @@
 										</td>
 									</tr>
 								</table>
-
 							</div>
 						</div>
 						<div class="carousel-item section" id="projects">
-							<div class="col d-flex justify-content-center align-items-center">
-								<h1>PROJETS</h1>
+							<div id="projectsWrapper" class="row d-flex justify-content-around align-items-center">
+								<div class="col d-flex flex-column justify-content-around align-items-center">
+									<div class="project d-flex flex-row justify-content-center align-items-center" data-toggle="modal" data-target="#modalRoR">
+										<div class="col-3 d-flex justify-content-center align-items-center">
+											<h4>Mod Risk Of Rain</h4>
+										</div>
+										<div class="col-9 d-flex justify-content-left align-items-center  projectSpecs" >
+											<ul>
+												<li>Language: C++</li>
+												<li>Taille de l'équipe: 2</li>
+												<li>Cadre: Personnel</li>
+											</ul>
+										</div>
+									</div>
+									<div class="project d-flex flex-row justify-content-center align-items-center" data-toggle="modal" data-target="#modalTodo">
+										<div class="col-3 d-flex justify-content-center align-items-center">
+											<h4>Site TodoList</h4>
+										</div>
+										<div class="col-9 d-flex justify-content-left align-items-center projectSpecs" >
+											<ul>
+												<li>Language: HTML, CSS, PHP, Mysql</li>
+												<li>Taille de l'équipe: 2</li>
+												<li>Cadre: Scolaire</li>
+											</ul>
+										</div>
+									</div>
+									<div class="project d-flex flex-row justify-content-center align-items-center" data-toggle="modal" data-target="#modalChess">
+										<div class="col-3 d-flex justify-content-center align-items-center">
+											<h4>Jeu d'échec</h4>
+										</div>
+										<div class="col-9 d-flex justify-content-left align-items-center projectSpecs" >
+											<ul>
+												<li>Language: C++</li>
+												<li>Taille de l'équipe: 2</li>
+												<li>Cadre: Scolaire</li>
+											</ul>
+										</div>
+									</div>
+									<div class="project d-flex flex-row justify-content-center align-items-center" data-toggle="modal" data-target="#modalTut">
+										<div class="col-3 d-flex justify-content-center align-items-center">
+											<h4>Projet tuteuré DUT</h4>
+										</div>
+										<div class="col-9 d-flex justify-content-left align-items-center projectSpecs" >
+											<ul>
+												<li>Language: C++</li>
+												<li>Taille de l'équipe: 5</li>
+												<li>Cadre: Scolaire</li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="carousel-item section" id="skills">
@@ -104,21 +151,130 @@
 		</div>
 
 
+		<!-- Modal -->
+		<div class="modal fade" id="modalRoR" tabindex="-1" role="dialog" aria-labelledby="modalRoR" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Mod Risk Of Rain</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row ">
+		        	<div class="col d-flex flex-row justify-content-center align-items-center">
+						<img class="img-fluid" src="./resources/ror.png"></img>
+		        	</div>
+		        </div>
+		        <div class="row rowProjectDetails">
+		        	<div class="col">
+		        		<p>Ce projet est une modification d'un jeu vidéo existant, Risk Of Rain. Le jeu se joue à plusieurs mais ne permet pas l'affichage des statistiques (vie, attaque, etc..) des autres joueurs. Le programme cherche alors ces valeurs dans la RAM, et utilise des sockets pour les transmettre aux autres joueurs, qui les affiche à l'aide d'un overlay en OpenGL.</p>
+		        	</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-secondary btn-sm" target="_blank" href="https://github.com/klaoude/RoRMods">Voir sur Github</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="modalTodo" tabindex="-1" role="dialog" aria-labelledby="modalTodo" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Site TodoList</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row ">
+		        	<div class="col d-flex flex-row justify-content-center align-items-center">
+						<img class="img-fluid" src="./resources/todoList.png"></img>
+		        	</div>
+		        </div>
+		        <div class="row rowProjectDetails">
+		        	<div class="col">
+		        		<p>Ce projet a été réalisé lors d'un cours de programmation serveur (PHP). Le site devait utiliser le patron MVC, contenir une partie publique et privée, et interagir avec une base de données. </p>
+		        	</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-secondary btn-sm" target="_blank" href="https://github.com/elraffray/TodoList">Voir sur Github</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="modalChess" tabindex="-1" role="dialog" aria-labelledby="modalChess" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Jeu d'échec</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row ">
+		        	<div class="col d-flex flex-row justify-content-center align-items-center">
+						<img class="img-fluid" src="./resources/chess.png"></img>
+		        	</div>
+		        </div>
+		        <div class="row rowProjectDetails">
+		        	<div class="col">
+		        		<p>Projet réalisé pour la spécialité ISN en terminale. Le jeu se joue en réseau (sockets) ou contre une IA, propose les coup disponibles, detecte les situations d'échec et d'échec et mat.</p>
+		        	</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-secondary btn-sm" target="_blank" href="https://github.com/klaoude/ISNEchecs">Voir sur Github</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="modalTut" tabindex="-1" role="dialog" aria-labelledby="modalTut" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Projet tuteuré DUT</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row ">
+		        	<div class="col d-flex flex-row justify-content-center align-items-center">
+						<img class="img-fluid" src="./resources/tut.jpg"></img>
+		        	</div>
+		        </div>
+		        <div class="row rowProjectDetails">
+		        	<div class="col">
+		        		<p>Ce projet à eu pour but de nous faire analyser le code d'un objet connecté, afin de comprendre comment il aurait pu être amélioré, au niveau conception et sécurité, à l'aide de patrons. Des outils de pentesting ont étés mis en oeuvre, et l'étude de patrons fut centrale au projet.</p>
+		        	</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-secondary btn-sm" target="_blank" href="https://github.com/IraSkyx/OpenThermostat">Voir sur Github</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+
 
 
 		<!-- jQuery first, then Tether, then Bootstrap JS. -->
-		<!--<script src="http://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://code.jquery.com/ui/1.8.23/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 		<script type="text/javascript">
 			old="#btnHome"
-
-			$(".barCat").click(function() {	
+				$(".barCat").click(function() {
 				//if user clicks on already selected section
 				if ($(this).css("flex-grow") != 0) {
 					return;
@@ -126,20 +282,16 @@
 				else {
 					//$(this).addClass("col-6");
 					$(this).animate({
-				    	"flex-grow": '1',
-				    	"color": '#F0B420',
-				    	"font-size": "1.2em"
-				    }, { duration: 1000, easing: "easeOutExpo", queue: false });
-
-				    $(old).animate({
-				    	"flex-grow": '0',
-				    	"color": '#f5f0f6',
-				    	"font-size": "1em"
-				    }, { duration: 1000, easing: "easeOutExpo", queue: false });
-
-				    old="#" + this.id;
-
-
+					"flex-grow": '1',
+					"color": '#F0B420',
+					"font-size": "1.2em"
+				}, { duration: 1000, easing: "easeOutExpo", queue: false });
+				$(old).animate({
+					"flex-grow": '0',
+					"color": '#f5f0f6',
+					"font-size": "1em"
+				}, { duration: 1000, easing: "easeOutExpo", queue: false });
+				old="#" + this.id;
 					switch (this.id) {
 						case "btnHome":
 							$("#mainCarousel").carousel(0);
@@ -159,15 +311,9 @@
 						case "btnInfos":
 							$("#mainCarousel").carousel(5);
 							break;
-
-
 					}
 				}
-
 			})
-
 		</script>
-
-
 	</body>
 </html>

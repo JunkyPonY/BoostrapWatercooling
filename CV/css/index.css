@@ -37,7 +37,8 @@
 	width: 100vw;
 }
 
-#home {
+#home .col {
+	height: 100%;
 }
 
 .carousel-inner {
@@ -80,6 +81,9 @@
 }
 
 
+#studies .col {
+	height: 100%;
+}
 
 #studies th {
     color: #46eaeb; /* whichever color you prefer */
@@ -93,3 +97,93 @@
 .spaceTop>th {
 	padding-top: 0.25em;
 }
+
+
+#projects .col {
+	height: 100%;
+}
+
+#projectsWrapper {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+#projectsWrapper > .col {
+	max-width: 80vw;
+	width: 50vw;
+}
+
+
+#projects .project {
+	background-color: #304771;
+	min-height: 20%;
+	min-width: 60%;
+	right: 0;
+	left: 0;
+	position: relative;
+
+	-webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.25);
+
+	-webkit-transition: color 0.25s linear;
+	-moz-transition: color 0.25s linear;
+	-o-transition: color 0.25s linear;
+	transition: color 0.25s linear;
+}
+
+#projects ul {
+	margin: 0;
+}
+
+#projects .project h4{
+	-webkit-transition: color 0.25s linear;
+	-moz-transition: color 0.25s linear;
+	-o-transition: color 0.25s linear;
+	transition: color 0.25s linear;
+	text-align: center;
+}
+
+#projects .project:hover h4{
+    color: #46eaeb; /* whichever color you prefer */
+}
+
+.modal-backdrop {
+  z-index: 0;
+}
+
+.modal .modal-content{
+	color: black;
+	background-color: #f5f0f6;
+	max-height: 90vh;
+
+}
+
+.modal .btn {
+	background-color: #304771;
+	-webkit-transition: color 0.25s linear;
+	-moz-transition: color 0.25s linear;
+	-o-transition: color 0.25s linear;
+	transition: color 0.25s linear;
+}
+
+.modal .btn:hover {
+	color: #F0B420;
+}
+
+.modal .img-fluid {
+	max-width: 60%;
+	max-height: 40vh;
+}
+
+.projectSpecs {
+	height: 100%; 
+	font-size: 1.2em;
+}
+
+.rowProjectDetails {
+	margin-top: 20px;
+}
+
+
