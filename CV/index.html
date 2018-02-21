@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Dosis:400,600" rel="stylesheet"> 
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="mainContent">
+				<div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+					<!-- Indicators 
+					<ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					-->
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="carousel-item active section" id="home">
+							<div class="background-image"></div>
+							<div class="col d-flex flex-column justify-content-center align-items-center">
+								<h1 class="lineBottom">ELOUAN RAFFRAY</h1>
+								<h3>Etudiant en Informatique</h3>
+							</div>
+						</div>
+						<div class="carousel-item section" id="studies">
+							<div class="col d-flex flex-column justify-content-center align-items-center">
+								<table>
+									<tr>
+										<th>2013-2016</th>
+									</tr>
+									<tr>
+										<td>
+											<ul>
+												<li>Baccalauréat Scientifique option SI, spécialité ISN au lycée Lafayette de Clermont-Ferrand.</li>
+
+											</ul>
+										</td>
+									</tr>
+									<tr class="spaceTop">
+										<th>2016-2018</th>
+									</tr>
+									<tr>
+										<td>
+											<ul>
+												<li>DUT Informatique à l'IUT des Cézaux de l'Université Clermont-Auvergne.</li>
+												<li>Stage professionel de 10 semaines dans le cadre de l'IUT, effectué chez ECS Digital, à Londres.</li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+
+							</div>
+						</div>
+						<div class="carousel-item section" id="projects">
+							<div class="col d-flex justify-content-center align-items-center">
+								<h1>PROJETS</h1>
+							</div>
+						</div>
+						<div class="carousel-item section" id="skills">
+							<div class="col d-flex justify-content-center align-items-center">
+								<h1>COMPETENCES</h1>
+							</div>
+						</div>
+						<div class="carousel-item section" id="hobbies">
+							<div class="col d-flex justify-content-center align-items-center">
+								<h1>HOBBIES</h1>
+							</div>
+						</div>
+						<div class="carousel-item section" id="infos">
+							<div class="col d-flex justify-content-center align-items-center">
+								<h1>INFO</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row d-flex flex-row justify-content-center align-items-center" id="navbar">
+				<div class="barCat d-flex justify-content-center align-items-center" id="btnHome">
+					ACCUEIL
+				</div>
+				<div class="barCat d-flex justify-content-center align-items-center" id="btnStudies">
+					ETUDES
+				</div>
+				<div class="barCat d-flex justify-content-center align-items-center" id="btnProjects">
+					PROJETS
+				</div>
+				<div class="barCat d-flex justify-content-center align-items-center" id="btnSkills">
+					COMPETENCES
+				</div>
+				<div class="barCat d-flex justify-content-center align-items-center" id="btnHobbies">
+					HOBBIES
+				</div>
+				<div class="barCat d-flex justify-content-center align-items-center" id="btnInfos">
+					INFO
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://code.jquery.com/ui/1.8.23/jquery-ui.min.js"></script>
+
+		<script type="text/javascript">
+			old="#btnHome"
+
+			$(".barCat").click(function() {	
+				//if user clicks on already selected section
+				if ($(this).css("flex-grow") != 0) {
+					return;
+				}
+				else {
+					//$(this).addClass("col-6");
+					$(this).animate({
+				    	"flex-grow": '1',
+				    	"color": '#F0B420',
+				    	"font-size": "1.2em"
+				    }, { duration: 1000, easing: "easeOutExpo", queue: false });
+
+				    $(old).animate({
+				    	"flex-grow": '0',
+				    	"color": '#f5f0f6',
+				    	"font-size": "1em"
+				    }, { duration: 1000, easing: "easeOutExpo", queue: false });
+
+				    old="#" + this.id;
+
+
+					switch (this.id) {
+						case "btnHome":
+							$("#mainCarousel").carousel(0);
+							break;
+						case "btnStudies":
+							$("#mainCarousel").carousel(1);
+							break;
+						case "btnProjects":
+							$("#mainCarousel").carousel(2);
+							break;
+						case "btnSkills":
+							$("#mainCarousel").carousel(3);
+							break;
+						case "btnHobbies":
+							$("#mainCarousel").carousel(4);
+							break;
+						case "btnInfos":
+							$("#mainCarousel").carousel(5);
+							break;
+
+
+					}
+				}
+
+			})
+
+		</script>
+
+
+	</body>
+</html>
